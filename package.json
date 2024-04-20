@@ -1,0 +1,38 @@
+{
+	"name": "sanketio.github.io",
+	"version": "1.0.0",
+	"description": "Personal portfolio website",
+	"author": {
+		"name": "Sanket Parmar",
+		"email": "sanket.parmar11@gmail.com",
+		"url": "https://sanketio.github.io",
+		"role": "developer"
+	},
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.css": [
+			"stylelint"
+		],
+		"*.js": [
+			"eslint"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sanketio/sanketio.github.io"
+	},
+	"devDependencies": {
+
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	}
+}
