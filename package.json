@@ -1,0 +1,47 @@
+{
+	"name": "sanketio.github.io",
+	"version": "1.0.0",
+	"description": "Personal portfolio website",
+	"author": {
+		"name": "Sanket Parmar",
+		"email": "sanket.parmar11@gmail.com",
+		"url": "https://sanketio.github.io",
+		"role": "developer"
+	},
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build": "webpack --mode production",
+		"dev": "webpack --mode development --watch"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.css": [
+			"stylelint"
+		],
+		"*.js": [
+			"eslint"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sanketio/sanketio.github.io"
+	},
+	"devDependencies": {
+		"css-loader": "^7.1.1",
+		"css-minimizer-webpack-plugin": "^6.0.0",
+		"mini-css-extract-plugin": "^2.9.0",
+		"node-sass": "^9.0.0",
+		"sass-loader": "^14.2.1",
+		"style-loader": "^4.0.0",
+		"webpack": "^5.91.0",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^5.0.4"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	}
+}
