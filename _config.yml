@@ -18,19 +18,31 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+name: Sanket Parmar
 title: Sanket Parmar | Web Engineer
 email: sanket.parmar11@gmail.com
 description: I'm an Indian based WordPress (PHP) developer having 11+ years of experience and focused on developing innovative solutions for diverse industries. I'm currently working with 10up as a Senior Web Engineer.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: https://sanketio.github.io # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-domain: https://sanketio.github.io
+logo: https://sanketio.github.io/src/images/emojis/technologist.png
+social:
+  - title: email
+    url: mailto:sanket.parmar11@gmail.com
+  - title: github
+    url: https://github.com/bchiang7
+  - title: wordpress
+    url: https://profiles.wordpress.org/sanketparmar/
+  - title: linkedin
+    url: https://www.linkedin.com/in/sanketio
+  - title: twitter
+    url: https://twitter.com/Sanketio
+  - title: instagram
+    url: https://instagram.com/snketio
+  - title: facebook
+    url: https://www.facebook.com/sanketio
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+markdown: kramdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -40,14 +52,21 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.gemspec'
+  - 'README.md'
+  - 'node_modules'
+  - 'build'
+  - 'gulpfile.js'
+  - 'package.json'
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+
+plugins_dir:
+  - jekyll-minifier
+  - jekyll-sitemap
