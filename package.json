@@ -35,6 +35,10 @@
 		"css-loader": "^7.1.1",
 		"css-minimizer-webpack-plugin": "^6.0.0",
 		"mini-css-extract-plugin": "^2.9.0",
+		"postcss": "^8.4.38",
+		"postcss-import": "^16.1.0",
+		"postcss-loader": "^8.1.1",
+		"postcss-mixins": "^10.0.0",
 		"style-loader": "^4.0.0",
 		"terser-webpack-plugin": "^5.3.10",
 		"webpack": "^5.91.0",
@@ -43,5 +47,8 @@
 	},
 	"engines": {
 		"node": ">=20.0.0"
+	},
+	"dependencies": {
+		"normalize.css": "^8.0.1"
 	}
 }

@@ -1,0 +1,100 @@
+/* Colors */
+:root {
+	/*
+	* Colors
+	*/
+	--c-mirage: #171C28;
+	--c-tuna: #36363C;
+	--c-gun-powder: #444452;
+	--c-boulder: #777777;
+	--c-azure-radiance: #007BFF;
+	--c-spun-pearl: #AFAFBF;
+	--c-mercury: #E7E7E7;
+	--c-white: #FFFFFF;
+	--c-yellow-green: #BAE67E;
+	--c-electric-violet: #7D0CE8;
+	--c-red: #FF0000;
+	--c-tahiti-gold: #E8850C;
+	--c-school-bus-yellow: #FFDC00;
+	--c-golden-tainoi: #FFCC66;
+
+	/*
+	* Fonts
+	*/
+	--f-primary: "Fira Code", sans-serif;
+
+	/*
+	* Dives Sizes
+	*/
+	--ds-fifteen-inch: 1440px;
+	--ds-thirteen-inch: 1280px;
+	--ds-desktop-width: 1024px;
+	--ds-little-desktop: 850px;
+	--ds-tablet-width: 768px;
+	--ds-weird-not-tablet-width: 630px;
+	--ds-phablet-width: 550px;
+	--ds-mobile-width: 480px;
+	--ds-small-mobile-width: 360px;
+	--ds-tiny-mobile-width: 330px;
+}
+
+/*
+ * Mixins
+ */
+@define-mixin transition {
+	transition: all 0.2s ease-in-out;
+}
+
+@define-mixin thirteen {
+	@media screen and (max-width: #{$thirteen-inch}) {
+		@content;
+	}
+}
+
+@define-mixin desktop {
+	@media screen and (max-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@define-mixin little-desktop {
+	@media screen and (max-width: #{$little-desktop}) {
+		@content;
+	}
+}
+
+@define-mixin tablet {
+	@media screen and (max-width: #{$tablet-width}) {
+		@content;
+	}
+}
+
+@define-mixin weird-medium {
+	@media screen and (max-width: #{$weird-not-tablet-width}) {
+		@content;
+	}
+}
+
+@define-mixin phablet {
+	@media screen and (max-width: #{$phablet-width}) {
+		@content;
+	}
+}
+
+@define-mixin mobile {
+	@media screen and (max-width: #{$mobile-width}) {
+		@content;
+	}
+}
+
+@define-mixin small-mobile {
+	@media screen and (max-width: #{$small-mobile-width}) {
+		@content;
+	}
+}
+
+@define-mixin tiny-mobile {
+	@media screen and (max-width: #{$tiny-mobile-width}) {
+		@content;
+	}
+}

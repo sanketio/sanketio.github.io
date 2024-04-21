@@ -1,2 +1,2 @@
-(()=>{"use strict";console.log("Hi")})();
+(()=>{"use strict";const e=(new Date).getHours(),t=e>=19||e<=7,s=document.querySelector("body"),n=document.getElementById("toggle"),c=document.getElementById("switch");t&&(c.checked=!0,s.classList.add("night")),n.addEventListener("click",(function(){c.checked?s.classList.remove("night"):s.classList.add("night")}));const o=document.querySelector(".emoji.wave-hand");setTimeout((function(){o.classList.add("wave"),setTimeout((function(){o.classList.remove("wave")}),2e3)}),1e3),o.addEventListener("mouseover",(function(){o.classList.add("wave")})),o.addEventListener("mouseout",(function(){o.classList.remove("wave")}))})();
 //# sourceMappingURL=app.js.map

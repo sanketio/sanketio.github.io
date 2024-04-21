@@ -1,0 +1,167 @@
+.intro {
+	padding: 120px 100px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	max-width: 1440px;
+	margin: 0 auto;
+
+	@mixin weird-medium {
+		padding: 120px 70px;
+	}
+
+	@mixin phablet {
+		padding: 120px 50px;
+	}
+
+	@mixin mobile {
+		padding: 70px 50px;
+	}
+
+	&__hello,
+	&__tagline {
+		font-size: 2.5rem;
+
+		@mixin desktop {
+			font-size: 2.25rem;
+		}
+
+		@mixin tablet {
+			font-size: 2rem;
+		}
+
+		@mixin phablet {
+			font-size: 1.75rem;
+		}
+
+		@mixin small-mobile {
+			font-size: 1.5rem;
+		}
+
+		@mixin tiny-mobile {
+			font-size: 1.4rem;
+		}
+
+		& .emoji {
+			width: 40px;
+			height: 40px;
+
+			@mixin desktop {
+				width: 35px;
+				height: 35px;
+			}
+
+			@mixin tablet {
+				width: 30px;
+				height: 30px;
+			}
+
+			@mixin small-mobile {
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+
+	&__hello {
+		font-weight: 300;
+
+		& .wave-hand {
+			background-image: url('../images/emojis/wave.png');
+			margin-left: 10px;
+			cursor: pointer;
+
+			&.animated {
+				animation-duration: 1s;
+				animation-fill-mode: both;
+			}
+
+			&.wave {
+				animation-name: wave;
+			}
+
+			@keyframes wave {
+				from {
+					transform: none;
+				}
+
+				15% {
+					transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
+				}
+
+				30% {
+					transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
+				}
+
+				45% {
+					transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
+				}
+
+				60% {
+					transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
+				}
+
+				75% {
+					transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+				}
+
+				to {
+					transform: none;
+				}
+			}
+		}
+	}
+
+	&__tagline {
+		font-weight: 300;
+		max-width: 700px;
+
+		.name {
+			font-weight: 700;
+		}
+
+		& .technologist {
+			background-image: url('../images/emojis/technologist.png');
+		}
+	}
+
+	&__contact {
+		font-size: 1.25rem;
+		font-weight: 400;
+
+		@mixin phablet {
+			font-size: 1rem;
+		}
+
+		& .emoji {
+			&.pointer {
+				background-image: url('../images/emojis/pointright.png');
+				width: 30px;
+				height: 30px;
+				margin: 0 5px;
+				vertical-align: text-bottom;
+
+				@mixin phablet {
+					width: 25px;
+					height: 25px;
+				}
+			}
+		}
+
+		& .highlight-link {
+			@mixin transition;
+			font-weight: 400;
+			text-decoration: none;
+			display: inline-block;
+			padding: 2px 3px;
+			text-decoration: none;
+			box-shadow: inset 0 -3px 0 var(--c-azure-radiance);
+
+			&:hover {
+				box-shadow: inset 0 -33px 0 0 var(--c-azure-radiance);
+				color: var(--c-white);
+			}
+		}
+	}
+}
