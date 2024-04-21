@@ -7,3 +7,5 @@ vendor
 Gemfile
 Gemfile.lock
 _posts
+dist
+node_modules

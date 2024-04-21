@@ -25,6 +25,7 @@ description: I'm an Indian based WordPress (PHP) developer having 11+ years of e
 baseurl: '' # the subpath of your site, e.g. /blog
 url: https://sanketio.github.io # the base hostname & protocol for your site, e.g. http://example.com
 logo: https://sanketio.github.io/src/images/emojis/technologist.png
+cover: https://sanketio.github.io/src/images/og.png
 social:
   - title: email
     url: mailto:sanket.parmar11@gmail.com
