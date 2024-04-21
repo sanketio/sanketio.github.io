@@ -1,2 +1,9 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 .history
-node_modules
+Gemfile
+Gemfile.lock
+_posts
