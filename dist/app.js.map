@@ -1,0 +1,1 @@
+{"version":3,"file":"app.js","mappings":"mBAEAA,QAAQC,IAAI,K","sources":["webpack://sanketio.github.io/./src/js/main.js"],"sourcesContent":["import '../css/main.css';\n\nconsole.log('Hi');"],"names":["console","log"],"sourceRoot":""}
