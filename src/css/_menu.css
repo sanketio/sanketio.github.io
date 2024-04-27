@@ -1,0 +1,85 @@
+.menu {
+	align-items: center;
+	color: var(--c-white);
+	display: flex;
+	padding-left: 50px;
+
+	& [type="checkbox"] {
+		height: 0;
+		margin: 0;
+		opacity: 0;
+		width: 0;
+
+		&:checked + label > span {
+			visibility: hidden;
+		}
+	}
+
+	& .menu-bar {
+		align-items: center;
+		cursor: pointer;
+		display: flex;
+		height: 1.5em;
+		position: relative;
+		width: 2em;
+		z-index: 40;
+
+		& span {
+			border: 1px solid var(--c-gray);
+			display: block;
+			transition: 150ms;
+			width: 100%;
+
+			&::before {
+
+				@mixin transition;
+
+				border: 1px solid var(--c-gray);
+				box-sizing: border-box;
+				content: "";
+				display: block;
+				left: 0;
+				position: absolute;
+				top: 0;
+				transform-origin: left;
+				width: 100%;
+			}
+
+			&::after {
+
+				@mixin transition;
+
+				border: 1px solid var(--c-gray);
+				bottom: 0;
+				box-sizing: border-box;
+				content: "";
+				display: block;
+				left: 0;
+				position: absolute;
+				transform-origin: left;
+				width: 100%;
+			}
+		}
+	}
+}
+
+body.night {
+
+	& .menu {
+
+		& .menu-bar {
+
+			& span {
+				border: 1px solid var(--c-white);
+
+				&::before {
+					border: 1px solid var(--c-white);
+				}
+
+				&::after {
+					border: 1px solid var(--c-white);
+				}
+			}
+		}
+	}
+}

@@ -19,9 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 name: Sanket Parmar
-title: Sanket Parmar | Web Engineer
+home_title: Home | Sanketio
 email: sanket.parmar11@gmail.com
-description: I'm an Indian based WordPress (PHP) developer having 11+ years of experience and focused on developing innovative solutions for diverse industries. I'm currently working with 10up as a Senior Web Engineer.
+description: I'm having 11+ years of experience as a WordPress (PHP) developer and focused on developing innovative solutions for diverse industries.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: https://sanketio.github.io # the base hostname & protocol for your site, e.g. http://example.com
 logo: https://sanketio.github.io/src/images/emojis/technologist.png

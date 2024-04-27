@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ site.home_title }}</title>
+		<meta property="og:title" content="{{site.home_title}}" />
+		<meta itemprop="name" content="{{site.home_title}}">
+		<meta name="twitter:title" content="{{site.home_title}}">
+
+		{% include head.html %}
+	</head>
+	<body>
+		{% include header.html %}
+		{{ content }}
+		{% include scripts.html %}
+	</body>
+</html>

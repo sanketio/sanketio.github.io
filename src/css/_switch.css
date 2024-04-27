@@ -2,9 +2,7 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	position: absolute;
-	right: 30px;
-	top: 20px;
+	padding-right: 50px;
 
 	@mixin mobile {
 		right: 20px;
@@ -37,7 +35,7 @@
 			width: 0;
 
 			&:checked + label {
-				background-color: var(--c-yellow-green);
+				background-color: var(--c-selective-yellow);
 			}
 
 			&:checked + label::after {
