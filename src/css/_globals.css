@@ -1,8 +1,10 @@
 /* Colors */
 :root {
+
 	/*
 	* Colors
 	*/
+
 	--c-mirage: #171C28;
 	--c-tuna: #36363C;
 	--c-gun-powder: #444452;
@@ -17,25 +19,12 @@
 	--c-tahiti-gold: #E8850C;
 	--c-school-bus-yellow: #FFDC00;
 	--c-golden-tainoi: #FFCC66;
+	--c-gray: #808080;
 
 	/*
 	* Fonts
 	*/
 	--f-primary: "Fira Code", sans-serif;
-
-	/*
-	* Dives Sizes
-	*/
-	--ds-fifteen-inch: 1440px;
-	--ds-thirteen-inch: 1280px;
-	--ds-desktop-width: 1024px;
-	--ds-little-desktop: 850px;
-	--ds-tablet-width: 768px;
-	--ds-weird-not-tablet-width: 630px;
-	--ds-phablet-width: 550px;
-	--ds-mobile-width: 480px;
-	--ds-small-mobile-width: 360px;
-	--ds-tiny-mobile-width: 330px;
 }
 
 /*
@@ -46,60 +35,70 @@
 }
 
 @define-mixin thirteen {
-	@media screen and (max-width: #{$thirteen-inch}) {
+
+	@media screen and (max-width: 1280px) {
 		@content;
 	}
 }
 
 @define-mixin desktop {
-	@media screen and (max-width: #{$desktop-width}) {
+
+	@media screen and (max-width: 1024px) {
 		@content;
 	}
 }
 
 @define-mixin little-desktop {
-	@media screen and (max-width: #{$little-desktop}) {
+
+	@media screen and (max-width: 850px) {
 		@content;
 	}
 }
 
 @define-mixin tablet {
-	@media screen and (max-width: #{$tablet-width}) {
+
+	@media screen and (max-width: 768px) {
 		@content;
 	}
 }
 
 @define-mixin weird-medium {
-	@media screen and (max-width: #{$weird-not-tablet-width}) {
+
+	@media screen and (max-width: 630px) {
 		@content;
 	}
 }
 
 @define-mixin phablet {
-	@media screen and (max-width: #{$phablet-width}) {
+
+	@media screen and (max-width: 550px) {
 		@content;
 	}
 }
 
 @define-mixin mobile {
-	@media screen and (max-width: #{$mobile-width}) {
+
+	@media screen and (max-width: 480px) {
 		@content;
 	}
 }
 
 @define-mixin small-mobile {
-	@media screen and (max-width: #{$small-mobile-width}) {
+
+	@media screen and (max-width: 360px) {
 		@content;
 	}
 }
 
 @define-mixin tiny-mobile {
-	@media screen and (max-width: #{$tiny-mobile-width}) {
+
+	@media screen and (max-width: 330px) {
 		@content;
 	}
 }
 
 @keyframes wave {
+
 	from {
 		transform: none;
 	}

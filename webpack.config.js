@@ -3,6 +3,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+const StylelintWebpackPlugin = require('stylelint-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 
 module.exports = {
@@ -23,6 +24,14 @@ module.exports = {
 			emitWarning: true,
 			emitError: true,
 			extensions: ['js'],
+			exclude: ['node_modules', 'dist'],
+		}),
+		new StylelintWebpackPlugin({
+			configFile: path.resolve(__dirname, 'stylelint.config.js'),
+			context: path.resolve(__dirname, './src/css'),
+			extensions: ['css'],
+			emitWarning: true,
+			emitError: true,
 			exclude: ['node_modules', 'dist'],
 		}),
 	],

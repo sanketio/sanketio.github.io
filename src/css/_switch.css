@@ -1,29 +1,29 @@
 .switch-wrapper {
+	align-items: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	position: absolute;
-	top: 20px;
 	right: 30px;
+	top: 20px;
 
 	@mixin mobile {
-		top: 10px;
 		right: 20px;
+		top: 10px;
 	}
 
 	& .sun,
 	& .moon {
-		width: 17px;
 		height: 17px;
+		width: 17px;
 	}
 
 	& .sun {
-		background: url('../images/switch/sun.svg') no-repeat center;
+		background: url("../images/switch/sun.svg") no-repeat center;
 		background-size: 100%;
 	}
 
 	& .moon {
-		background: url('../images/switch/moon.svg') no-repeat center;
+		background: url("../images/switch/moon.svg") no-repeat center;
 		background-size: 100%;
 	}
 
@@ -32,40 +32,42 @@
 
 		& #switch {
 			height: 0;
-			width: 0;
-			visibility: hidden;
 			position: absolute;
+			visibility: hidden;
+			width: 0;
 
 			&:checked + label {
 				background-color: var(--c-yellow-green);
 			}
 
-			&:checked + label:after {
+			&:checked + label::after {
 				left: calc(100% - 3px);
 				transform: translateX(-100%);
 			}
 		}
 
 		& label {
+			background: var(--c-gray);
+			border-radius: 100px;
 			cursor: pointer;
+			display: block;
+			height: 25px;
+			position: relative;
 			text-indent: -9999px;
 			width: 45px;
-			height: 25px;
-			background: grey;
-			display: block;
-			border-radius: 100px;
-			position: relative;
 
-			&:after {
+			&::after {
+
 				@mixin transition;
-				content: '';
+
+				background: var(--c-white);
+				border-radius: 100%;
+				content: "";
+				height: 19px;
+				left: 3px;
 				position: absolute;
 				top: 3px;
-				left: 3px;
 				width: 19px;
-				height: 19px;
-				background: #fff;
-				border-radius: 100%;
 			}
 		}
 	}
