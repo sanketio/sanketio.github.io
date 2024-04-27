@@ -11,11 +11,14 @@
 	"license": "GPL-2.0-or-later",
 	"scripts": {
 		"build": "webpack --mode production",
-		"dev": "webpack --mode development --watch"
+		"dev": "webpack --mode development --watch",
+		"lint": "eslint src/js",
+		"precommit": "npm run lint",
+		"prepare": "husky install"
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "lint-staged"
+			"pre-commit": "npm run precommit"
 		}
 	},
 	"lint-staged": {
@@ -34,12 +37,19 @@
 		"copy-webpack-plugin": "^12.0.2",
 		"css-loader": "^7.1.1",
 		"css-minimizer-webpack-plugin": "^6.0.0",
+		"eslint": "^8.57.0",
+		"eslint-webpack-plugin": "^4.1.0",
+		"husky": "^9.0.11",
 		"mini-css-extract-plugin": "^2.9.0",
 		"postcss": "^8.4.38",
 		"postcss-import": "^16.1.0",
 		"postcss-loader": "^8.1.1",
 		"postcss-mixins": "^10.0.0",
 		"style-loader": "^4.0.0",
+		"stylelint": "^16.4.0",
+		"stylelint-config-recommended": "^14.0.0",
+		"stylelint-order": "^6.0.4",
+		"stylelint-webpack-plugin": "^5.0.0",
 		"terser-webpack-plugin": "^5.3.10",
 		"webpack": "^5.91.0",
 		"webpack-cli": "^5.1.4",
@@ -49,6 +59,11 @@
 		"node": ">=20.0.0"
 	},
 	"dependencies": {
-		"normalize.css": "^8.0.1"
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-jsdoc": "^48.2.3",
+		"eslint-plugin-prettier": "^5.1.3",
+		"normalize.css": "^8.0.1",
+		"prettier": "^3.2.5",
+		"stylelint-declaration-strict-value": "^1.10.4"
 	}
 }

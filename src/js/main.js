@@ -1,3 +1,7 @@
+/**
+ * Main JS file.
+ */
+
 import '../css/main.css';
 
 const d = new Date();
@@ -12,7 +16,7 @@ if (night) {
 	body.classList.add('night');
 }
 
-toggle.addEventListener('click', function() {
+toggle.addEventListener('click', function () {
 	const isChecked = input.checked;
 	if (isChecked) {
 		body.classList.remove('night');
@@ -23,21 +27,24 @@ toggle.addEventListener('click', function() {
 
 const hand = document.querySelector('.emoji.wave-hand');
 
+/**
+ * Wave on page load.
+ */
 function waveOnLoad() {
 	hand.classList.add('wave');
-	setTimeout(function() {
+	setTimeout(function () {
 		hand.classList.remove('wave');
 	}, 2000);
 }
 
-setTimeout(function() {
+setTimeout(function () {
 	waveOnLoad();
 }, 1000);
 
-hand.addEventListener('mouseover', function() {
+hand.addEventListener('mouseover', function () {
 	hand.classList.add('wave');
 });
 
-hand.addEventListener('mouseout', function() {
+hand.addEventListener('mouseout', function () {
 	hand.classList.remove('wave');
 });
