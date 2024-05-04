@@ -2,6 +2,18 @@
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
+	padding: 25px 0;
 	position: fixed;
 	width: 100%;
+
+	& .site-title {
+		flex-basis: 33%;
+		font-size: 24px;
+		margin: 0;
+		text-align: center;
+
+		@media (--bp-medium) {
+			font-size: 32px;
+		}
+	}
 }

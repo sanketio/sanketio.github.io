@@ -1,8 +1,8 @@
 .switch-wrapper {
 	align-items: center;
 	display: flex;
+	flex-basis: 33%;
 	justify-content: right;
-	min-width: 150px;
 	padding-right: 25px;
 
 	@media (--bp-medium) {

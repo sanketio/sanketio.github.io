@@ -2,8 +2,8 @@
 	align-items: center;
 	color: var(--c-white);
 	display: flex;
+	flex-basis: 33%;
 	justify-content: left;
-	min-width: 150px;
 	padding-left: 25px;
 
 	@media (--bp-medium) {
