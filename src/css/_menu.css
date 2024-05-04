@@ -18,6 +18,21 @@
 
 		&:checked + label > span {
 			visibility: hidden;
+
+			&::before {
+				transform: rotateZ(44deg);
+				visibility: visible;
+			}
+
+			&::after {
+				transform: rotateZ(-44deg);
+				visibility: visible;
+			}
+		}
+
+		&:checked ~ .menu-nav {
+			box-shadow: 1px 1px 1px 1px var(--c-gun-powder);
+			transform: translateX(0);
 		}
 	}
 
@@ -31,7 +46,7 @@
 		z-index: 40;
 
 		& span {
-			border: 1px solid var(--c-gray);
+			border: 1px solid var(--c-gun-powder);
 			display: block;
 			transition: 150ms;
 			width: 100%;
@@ -40,7 +55,7 @@
 
 				@mixin transition;
 
-				border: 1px solid var(--c-gray);
+				border: 1px solid var(--c-gun-powder);
 				box-sizing: border-box;
 				content: "";
 				display: block;
@@ -55,7 +70,7 @@
 
 				@mixin transition;
 
-				border: 1px solid var(--c-gray);
+				border: 1px solid var(--c-gun-powder);
 				bottom: 0;
 				box-sizing: border-box;
 				content: "";
@@ -67,20 +82,60 @@
 			}
 		}
 	}
+
+	& .menu-nav {
+
+		@mixin transition;
+
+		background-color: var(--c-white);
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		left: 0;
+		min-width: 240px;
+		padding: 104px 25px;
+		position: absolute;
+		row-gap: 1rem;
+		top: 0;
+		transform: translateX(-100%);
+
+		@media (--bp-medium) {
+			padding: 104px 50px;
+		}
+
+		& .nav-item {
+			color: var(--c-gun-powder);
+		}
+	}
 }
 
 body.night {
 
-	& .menu .menu-bar span {
+	& .menu {
 
-		border: 1px solid var(--c-white);
+		& .menu-bar span {
 
-		&::before {
 			border: 1px solid var(--c-white);
+
+			&::before {
+				border: 1px solid var(--c-white);
+			}
+
+			&::after {
+				border: 1px solid var(--c-white);
+			}
 		}
 
-		&::after {
-			border: 1px solid var(--c-white);
+		& .menu-nav {
+			background-color: var(--c-mirage);
+
+			& .nav-item {
+				color: var(--c-white);
+			}
+		}
+
+		& [type="checkbox"]:checked ~ .menu-nav {
+			box-shadow: 1px 1px 1px 1px var(--c-selective-yellow);
 		}
 	}
 }

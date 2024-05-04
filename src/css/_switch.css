@@ -45,7 +45,7 @@
 		}
 
 		& label {
-			background: var(--c-gray);
+			background: var(--c-gun-powder);
 			border-radius: 100px;
 			cursor: pointer;
 			display: block;
