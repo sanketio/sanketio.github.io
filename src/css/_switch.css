@@ -1,12 +1,12 @@
 .switch-wrapper {
 	align-items: center;
 	display: flex;
-	justify-content: center;
-	padding-right: 50px;
+	justify-content: right;
+	min-width: 150px;
+	padding-right: 25px;
 
-	@mixin mobile {
-		right: 20px;
-		top: 10px;
+	@media (--bp-medium) {
+		padding-right: 50px;
 	}
 
 	& .sun,

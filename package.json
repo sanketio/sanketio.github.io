@@ -47,6 +47,7 @@
 		"postcss-import": "^16.1.0",
 		"postcss-loader": "^8.1.1",
 		"postcss-mixins": "^10.0.0",
+		"postcss-preset-env": "^9.5.9",
 		"style-loader": "^4.0.0",
 		"stylelint": "^16.4.0",
 		"stylelint-config-recommended": "^14.0.0",

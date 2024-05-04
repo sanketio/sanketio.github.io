@@ -43,7 +43,28 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
+				use: [
+					MiniCssExtractPlugin.loader,
+					'css-loader',
+					{
+						loader: 'postcss-loader',
+						options: {
+							postcssOptions: {
+								plugins: [
+									[
+										'postcss-preset-env',
+										{
+											stage: 0,
+											features: {
+												'custom-properties': false,
+											},
+										},
+									],
+								],
+							},
+						},
+					},
+				],
 			},
 		],
 	},
@@ -53,7 +74,6 @@ module.exports = {
 			chunks: 'all',
 		},
 	},
-	devtool: 'source-map',
 	devServer: {
 		hot: true,
 	},
