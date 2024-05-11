@@ -11,6 +11,11 @@
 				height: 48px;
 				width: 48px;
 			}
+
+			&.technologist {
+				height: 30px;
+				width: 30px;
+			}
 		}
 
 		& .wave-hand {
