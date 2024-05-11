@@ -10,7 +10,11 @@
 	</head>
 	<body>
 		{% include header.html %}
-		{{ content }}
+
+		<div class="container">
+			{% include intro.html %}
+		</div>
+
 		{% include scripts.html %}
 	</body>
 </html>

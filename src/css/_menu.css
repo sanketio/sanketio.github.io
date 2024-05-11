@@ -135,7 +135,7 @@ body.night {
 		}
 
 		& [type="checkbox"]:checked ~ .menu-nav {
-			box-shadow: 1px 1px 1px 1px var(--c-selective-yellow);
+			box-shadow: 1px 1px 1px 1px var(--c-white);
 		}
 	}
 }

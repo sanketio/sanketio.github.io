@@ -10,6 +10,8 @@ const night = hours >= 19 || hours <= 7; // between 7pm and 7am
 const body = document.querySelector('body');
 const toggle = document.getElementById('toggle');
 const input = document.getElementById('switch');
+const hand = document.querySelector('.emoji.wave-hand');
+const typing = document.querySelector('.typing');
 
 if (night) {
 	input.checked = true;
@@ -25,26 +27,57 @@ toggle.addEventListener('click', function () {
 	}
 });
 
-const hand = document.querySelector('.emoji.wave-hand');
-
 /**
- * Wave on page load.
+ * Wave hand empji on load.
  */
-function waveOnLoad() {
+const waveOnLoad = () => {
+	if (!hand) {
+		return;
+	}
+
 	hand.classList.add('wave');
 	setTimeout(function () {
 		hand.classList.remove('wave');
 	}, 2000);
+};
+
+/**
+ * Typing text effect.
+ */
+const typeTextOnLoad = () => {
+	if (!typing) {
+		return;
+	}
+
+	setTimeout(() => {
+		typing.textContent = 'Developer';
+	}, 0);
+
+	setTimeout(() => {
+		typing.textContent = 'Consultant';
+	}, 4000);
+
+	setTimeout(() => {
+		typing.textContent = 'Architect';
+	}, 8000);
+};
+
+if (hand) {
+	setTimeout(function () {
+		waveOnLoad();
+	}, 1000);
+
+	hand.addEventListener('mouseover', function () {
+		hand.classList.add('wave');
+	});
+
+	hand.addEventListener('mouseout', function () {
+		hand.classList.remove('wave');
+	});
 }
 
-setTimeout(function () {
-	waveOnLoad();
-}, 1000);
+if (typing) {
+	typeTextOnLoad();
 
-hand.addEventListener('mouseover', function () {
-	hand.classList.add('wave');
-});
-
-hand.addEventListener('mouseout', function () {
-	hand.classList.remove('wave');
-});
+	setInterval(typeTextOnLoad, 12000);
+}

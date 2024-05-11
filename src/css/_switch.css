@@ -35,10 +35,11 @@
 			width: 0;
 
 			&:checked + label {
-				background-color: var(--c-selective-yellow);
+				background: var(--c-mercury);
 			}
 
 			&:checked + label::after {
+				background: var(--c-gun-powder);
 				left: calc(100% - 3px);
 				transform: translateX(-100%);
 			}

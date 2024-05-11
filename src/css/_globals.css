@@ -26,6 +26,38 @@
 	* Fonts
 	*/
 	--f-primary: "Fira Code", sans-serif;
+
+	--fw-heading: 400;
+
+	--fs-h1: 48px;
+	--fs-h1-tab: 34px;
+	--lh-h1: 1.35;
+	--lh-h1-tab: 1.29;
+	--ls-h1: -1px;
+
+	--fs-h2: 32px;
+	--fs-h2-tab: 28px;
+	--lh-h2: 1.3125;
+	--lh-h2-tab: 1.32;
+	--ls-h2: -0.8px;
+
+	--fs-h3: 23px;
+	--fs-h3-tab: 21px;
+	--lh-h3: 1.43;
+	--lh-h3-tab: 1.47;
+	--ls-h3: -0.5px;
+
+	--fs-body: 16px;
+	--fs-body-small: 14px;
+	--fs-body-xsmall: 12px;
+	--fs-body-large: 18px;
+	--fs-body-xlarge: 20px;
+	--fs-body-xxlarge: 24px;
+	--lh-body: 1.5;
+	--fw-body: 400;
+	--fw-body-semibold: 500;
+	--fw-body-bold: 700;
+	--f-body-italic: italic;
 }
 
 @custom-media --bp-tiny-max ( max-width: 374px );
@@ -139,5 +171,17 @@
 
 	to {
 		transform: none;
+	}
+}
+
+@keyframes typing {
+
+	40%,
+	60% {
+		left: 100%;
+	}
+
+	100% {
+		left: 0;
 	}
 }
