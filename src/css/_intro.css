@@ -35,14 +35,14 @@
 	}
 
 	& .typing {
-		border-bottom: 3px solid var(--c-gun-powder);
+		border-bottom: 2px solid var(--c-gun-powder);
 		color: var(--c-gun-powder);
 		position: relative;
 
 		&::before {
 			animation: typing 4s steps(12) infinite;
 			background-color: var(--c-white);
-			border-left: 3px solid var(--c-gun-powder);
+			border-left: 2px solid var(--c-gun-powder);
 			content: "";
 			height: 100%;
 			left: 0;
@@ -79,11 +79,11 @@
 }
 
 body.night .intro .typing {
-	border-bottom: 3px solid var(--c-mercury);
+	border-bottom: 2px solid var(--c-mercury);
 	color: var(--c-mercury);
 
 	&::before {
 		background-color: var(--c-mirage);
-		border-left: 3px solid var(--c-mercury);
+		border-left: 2px solid var(--c-mercury);
 	}
 }
