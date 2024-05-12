@@ -107,7 +107,7 @@ a {
 		color: var(--c-white);
 	}
 
-	&[target="_blank"]::after {
+	&[target="_blank"]:not(.social-link-anchor)::after {
 		background: url("../images/external-link.svg") no-repeat center;
 		background-size: 100%;
 		content: "";
@@ -115,6 +115,15 @@ a {
 		height: 14px;
 		margin-left: 5px;
 		width: 14px;
+	}
+
+	&.header-link-anchor {
+		box-shadow: none;
+
+		&:hover {
+			box-shadow: none;
+			color: inherit;
+		}
 	}
 }
 

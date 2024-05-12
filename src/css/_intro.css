@@ -58,11 +58,43 @@
 	}
 
 	& .intro__contact {
-		font-size: 1.25rem;
-		font-weight: 400;
+		align-items: center;
+		display: flex;
+		justify-content: center;
 
-		@mixin phablet {
-			font-size: 1rem;
+		& .social-links {
+			display: inline-block;
+			margin-left: 20px;
+
+			& .social-link {
+				border-radius: 9999px;
+				border-style: solid;
+				height: 40px;
+				width: 40px;
+
+				&:hover {
+
+					@mixin transition;
+
+					transform: scale(1.1);
+				}
+			}
+
+			& .social-link-anchor {
+				box-shadow: none;
+				color: inherit;
+				height: 100%;
+				padding: 0;
+				width: 100%;
+
+				& .social-link-label {
+					height: 1px;
+					margin: -1px;
+					overflow: hidden;
+					position: absolute;
+					width: 1px;
+				}
+			}
 		}
 
 		& .emoji {
