@@ -20,7 +20,6 @@ body {
 	font-family: var(--f-primary);
 	font-size: var(--fs-body);
 	font-weight: var(--fw-body);
-	height: 100vh;
 	line-height: var(--lh-body);
 	margin: 0;
 	padding: 0;
@@ -183,9 +182,14 @@ strong {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1024px;
-	padding: 90px 25px 25px;
+	min-height: 100vh;
+	padding: 90px 25px 160px;
 
 	@media (--bp-medium) {
-		padding: 150px 50px 50px;
+		padding: 150px 50px 185px;
 	}
+}
+
+body.night .container {
+	background-color: var(--c-mirage);
 }

@@ -1,0 +1,57 @@
+.footer {
+	background-color: var(--c-white);
+	bottom: 0;
+	box-shadow: 1px 1px 1px 3px var(--c-gun-powder);
+	padding-bottom: 25px;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+
+	& .intro__contact {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		& .social-links {
+			display: flex;
+			gap: 12px;
+			justify-content: center;
+
+			& .social-link {
+				border-radius: 9999px;
+				border-style: solid;
+				height: 40px;
+				width: 40px;
+
+				&:hover {
+
+					@mixin transition;
+
+					transform: scale(1.1);
+				}
+			}
+
+			& .social-link-anchor {
+				box-shadow: none;
+				color: inherit;
+				height: 100%;
+				padding: 0;
+				width: 100%;
+
+				& .social-link-label {
+					height: 1px;
+					margin: -1px;
+					overflow: hidden;
+					position: absolute;
+					width: 1px;
+				}
+			}
+		}
+	}
+}
+
+body.night .footer {
+	background-color: var(--c-mirage);
+	box-shadow: 1px 1px 1px 3px var(--c-white);
+}

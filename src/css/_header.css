@@ -1,11 +1,13 @@
 .header {
 	align-items: center;
+	background-color: var(--c-white);
 	box-shadow: 1px 1px 1px 1px var(--c-gun-powder);
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0;
 	position: fixed;
 	width: 100%;
+	z-index: 999;
 
 	@media (--bp-medium) {
 		padding: 26px 0;
@@ -24,5 +26,6 @@
 }
 
 body.night .header {
+	background-color: var(--c-mirage);
 	box-shadow: 1px 1px 1px 1px var(--c-white);
 }
