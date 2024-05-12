@@ -1,7 +1,7 @@
 .header {
 	align-items: center;
 	background-color: var(--c-white);
-	box-shadow: 1px 1px 1px 1px var(--c-gun-powder);
+	border-bottom: 2px solid var(--c-gun-powder);
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0;
@@ -27,5 +27,5 @@
 
 body.night .header {
 	background-color: var(--c-mirage);
-	box-shadow: 1px 1px 1px 1px var(--c-white);
+	border-bottom: 2px solid var(--c-white);
 }

@@ -31,7 +31,7 @@
 		}
 
 		&:checked ~ .menu-nav {
-			box-shadow: 1px 1px 1px 1px var(--c-gun-powder);
+			border-right: 2px solid var(--c-gun-powder);
 			transform: translateX(0);
 		}
 	}
@@ -135,7 +135,7 @@ body.night {
 		}
 
 		& [type="checkbox"]:checked ~ .menu-nav {
-			box-shadow: 1px 1px 1px 1px var(--c-white);
+			border-right: 2px solid var(--c-white);
 		}
 	}
 }

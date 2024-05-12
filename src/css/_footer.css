@@ -1,11 +1,11 @@
 .footer {
 	background-color: var(--c-white);
+	border-top: 2px solid var(--c-gun-powder);
 	bottom: 0;
-	box-shadow: 1px 1px 1px 3px var(--c-gun-powder);
 	padding-bottom: 25px;
 	position: fixed;
 	width: 100%;
-	z-index: 999;
+	z-index: 99;
 
 	& .intro__contact {
 		align-items: center;
@@ -53,5 +53,5 @@
 
 body.night .footer {
 	background-color: var(--c-mirage);
-	box-shadow: 1px 1px 1px 3px var(--c-white);
+	border-top: 2px solid var(--c-white);
 }
