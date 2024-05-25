@@ -1,0 +1,22 @@
+.about {
+
+	& h1 {
+		text-align: center;
+	}
+
+	& .emoji {
+		height: 16px;
+		margin-top: 3px;
+		width: 16px;
+	}
+
+	& .pray {
+		background-image: url("../images/emojis/pray.png");
+		position: relative;
+	}
+
+	& .wink {
+		background-image: url("../images/emojis/wink.png");
+		position: relative;
+	}
+}

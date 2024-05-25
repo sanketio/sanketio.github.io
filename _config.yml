@@ -22,6 +22,7 @@ port: 4001
 name: Sanket Parmar
 home_title: Home | Sanketio
 not_found_title: Page Not Found | Sanketio
+about_title: About | Sanketio
 email: sanket.parmar11@gmail.com
 description: I'm having 11+ years of experience as a WordPress (PHP) developer and focused on developing innovative solutions for diverse industries.
 baseurl: '' # the subpath of your site, e.g. /blog
