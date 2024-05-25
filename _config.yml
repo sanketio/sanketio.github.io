@@ -18,6 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+port: 4001
 name: Sanket Parmar
 home_title: Home | Sanketio
 email: sanket.parmar11@gmail.com
