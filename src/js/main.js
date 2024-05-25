@@ -50,15 +50,15 @@ const typeTextOnLoad = () => {
 	}
 
 	setTimeout(() => {
-		typing.textContent = 'Developer';
+		typing.textContent = 'a Developer';
 	}, 0);
 
 	setTimeout(() => {
-		typing.textContent = 'Consultant';
+		typing.textContent = 'a Consultant';
 	}, 4000);
 
 	setTimeout(() => {
-		typing.textContent = 'Architect';
+		typing.textContent = 'an Architect';
 	}, 8000);
 };
 
