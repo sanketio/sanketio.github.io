@@ -33,7 +33,7 @@
 			}
 
 			& .social-link-anchor {
-				box-shadow: none;
+				border-bottom: none;
 				color: inherit;
 				height: 100%;
 				padding: 0;
@@ -45,6 +45,10 @@
 					overflow: hidden;
 					position: absolute;
 					width: 1px;
+				}
+
+				&:hover {
+					box-shadow: none;
 				}
 			}
 		}
